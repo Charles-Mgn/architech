@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+
+/* BASICS */
+:root {
+    background-color: #FFF;
+    color: #000;
+    font-size: 62.5%;
+    font-family: 'Reem Kufi', sans-serif;
+    line-height: 3rem;
+    overflow-x: hidden;
+    --tonic-color: #00FFD3;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: #bbb;
+}
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+a, li, router-link {
+    text-decoration: none;
+    color: #000;
+}
+button {
+    background-color: #FFF;
+    border: 1px solid var(--tonic-color);
+    border-radius: 0;
+    padding: 1rem 0;
+    display: block;
+    margin: 0 auto 30px;
+    transition: all .1s ease-in-out;
+}
+button:hover {
+    background-color: var(--tonic-color);
+    border-radius: 0;
+    display: block;
+    transition: all .1s ease-in-out;
+}
+button:first-of-type {
+    margin-top: 100px;
+}
+button a, button router-link {
+    display: block;
+    width: 300px;
+    height: 25px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.image-border {
+    border: 1px solid var(--tonic-color);
+}
+h1 {
+    font-size: 2.3rem;
+}
+@keyframes slideVertical {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideHorizontal {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* END OF BASICS */
+
+
+/* HEADER */
+header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.8);
+    z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    nav img {
+        height: 0;
+        padding-top: 10px;
+    }
+}
+
+header img, header ul, header li {
+    display: inline-block;
+}
+
+nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    list-style: none;
+    padding: 1rem;
+    margin: 0 5rem;
+    font-size: 1.7rem;
+}
+.active {
+    border-bottom: 2px solid var(--tonic-color);
+}
+/* END OF HEADER */
+
+
+/* MAIN ACCUEIL */
+main {
+    margin-top: 70px;
+    font-size: 1.4rem;
+}
+.accueil-img1 {
+    width: 340px;
+    height: 347px;
+    background: url("../../../static/img/desktop-accueil1.png") center;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: slideVertical .4s ease-in-out forwards;
+}
+.accueil-img2 {
+    width: 340px;
+    height: 347px;
+    background: url("../../../static/img/desktop-accueil2.png") center;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(-30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.accueil-logo-desktop {
+    margin: 0 auto;
+    display: block;
+}
+.inline-title {
+    display: inline;
+    margin-right: .5rem;
+}
+.inline-paragraph {
+    display: inline;
+}
+.border-mobile-right {
+    border-right: 5px solid var(--tonic-color);
+    padding-right: 15px;
+    margin: 40px 0;
+}
+.border-mobile-left {
+    border-left: 5px solid var(--tonic-color);
+    padding-left: 15px;
+    margin: 40px 0;
+}
+@media screen and (min-width: 700px) {
+    main {
+        margin-top: 90px;
+        font-size: 1.3rem;
+        position: relative;
+    }
+
+    .inline-texte {
+        max-width: 850px;
+    }
+
+    main > p {
+        max-width: 500px;
+    }
+
+    .accueil-bloc-text1 {
+        width: 400px;
+    }
+
+
+    .border-mobile-right {
+        border-right: none;
+        padding: 0;
+        margin: 0;
+    }
+    .border-mobile-left {
+        border-left: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .accueil-bloc-text2 {
+        display: block;
+        margin: 150px auto 0;
+    }
+
+    .accueil-img1, .accueil-img2 {
+        margin: 50px;
+    }
+
+    .accueil-img1 {
+        width: 536px;
+        height: 347px;
+        background: url("../../../static/img/desktop-accueil1.png") center;
+    }
+
+    .accueil-img2 {
+        width: 536px;
+        height: 347px;
+        background: url("../../../static/img/desktop-accueil2.png") center;
+        float: left;
+    }
+
+    .accueil-logo-desktop {
+        margin-left: 180px;
+    }
+
+    .accueil-flex-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/* END OF MAIN */
+
+
+/* MAIN UGARTE */
+.ugarte-content {
+    display: block;
+    margin-bottom: 200px;
+}
+.ugarte-img1 {
+    width: 100vw;
+    height: 260px;
+    background: url("../../../static/img/desktop-ugarte1.png") center;
+    background-size: cover;
+    margin-left: -9px;
+    border-right: none;
+    transform: translateX(-30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.ugarte-img2 {
+    width: 350px;
+    height: 220px;
+    background: url("../../../static/img/desktop-ugarte2.png") center;
+    background-size: cover;
+    margin: 60px -8px 0 auto;
+    border-right: none;
+    transform: translateX(30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.ugarte-texte {
+    width: 380px;
+    line-height: 2rem;
+    margin-top: 60px;
+}
+@media screen and (min-width: 700px) {
+    .ugarte-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+    .ugarte-img1 {
+        width: 828px;
+        height: 584px;
+        background: url("../../../static/img/desktop-ugarte1.png");
+        margin-left: -240px;
+    }
+    .ugarte-img2 {
+        width: 448px;
+        height: 277px;
+        background: url("../../../static/img/desktop-ugarte2.png");
+        align-self: end;
+        margin: 0 -80px -80px 0;
+    }
+    .ugarte-texte {
+        width: 380px;
+        line-height: 2rem;
+        margin-top: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* END OF MAIN UGARTE */
+
+
+/* MAIN OEUVRES */
+.oeuvre {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    transform: translateX(-30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.oeuvre:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    transform: translateX(30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.oeuvre-desc {
+    padding: 0 3rem;
+}
+.oeuvre-desc * {
+    margin: 0;
+}
+.oeuvre-titre {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
+    .oeuvre {
+        display: flex;
+        margin: 100px 20% 0;
+    }
+    #oeuvres h1 {
+        margin: 0 20%;
+    }
+    .oeuvre-desc {
+        padding: 0 3rem;
+    }
+    .oeuvre-titre {
+        text-transform: uppercase;
+    }
+}
+.desc-button {
+  padding: 0;
+  margin-top: 5px !important;
+}
+.desc-router, .desc-router:hover {
+  padding: 0;
+  margin: 0;
+  width: 170px;
+}
+/* END OF MAIN OEUVRES */
+
+
+/* MAIN DETAIL */
+#detail main img {
+  width: 50%;
+  display: block;
+  margin: 0 auto 40px;
+
+}
+#detail main h2, #detail main p {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* END OF MAIN DETAIL */
+
+
+/* MAIN COLLAB */
+#collab .inline-texte {
+    max-width: 850px;
+    display: block;
+    margin: 0 auto;
+}
+form {
+    margin-top: 50px;
+}
+form input {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    height: 40px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.6rem;
+    border: 1px solid var(--tonic-color);
+    border-radius: 0;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    #collab .inline-texte {
+        max-width: 850px;
+        display: block;
+        margin: 150px auto 0;
+    }
+    form {
+        margin-top: 100px;
+    }
+    form input {
+        display: block;
+        margin: 20px auto;
+        max-width: 850px;
+        height: 30px;
+        font-family: 'Reem Kufi', sans-serif;
+        font-size: 1.6rem;
+        border: 1px solid var(--tonic-color);
+        border-radius: 0;
+        padding-left: 10px;
+    }
+    .form-control {
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #collab button {
+        display: inline-block;
+        margin: 0 50px;
+    }
+}
+.confirmer {
+  padding: 1.5rem 11rem;
+}
+.confirmer:hover {
+  padding: 1.5rem 11rem;
+}
+/* END OF MAIN COLLAB */
+
+
+/* MAIN ARTISTES */
+.artistes-content {
+    display: block;
+    margin-bottom: 100px;
+}
+.artiste-img1 {
+    width: 100vw;
+    height: 260px;
+    background: url("../../../static/img/desktop-artiste1.png") center;
+    background-size: cover;;
+    margin-left: -10px;
+    margin-bottom: 60px;
+    transform: translateX(30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.artiste-img2 {
+    width: 350px;
+    height: 220px;
+    background: url("../../../static/img/desktop-artiste2.png") center;
+    background-size: cover;;
+    margin-left: -20px;
+    margin-top: 30px;
+    align-self: end;
+    transform: translateX(-30px);
+    opacity: 0;
+    animation: slideHorizontal .4s ease-in-out forwards;
+}
+.artiste-texte {
+    width: 380px;
+    line-height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .artistes-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+    .artiste-img1 {
+        width: 828px;
+        height: 584px;
+        background: url("../../../static/img/desktop-artiste1.png");
+        margin-right: -240px;
+        margin-bottom: 0;
+    }
+    .artiste-img2 {
+        width: 448px;
+        height: 277px;
+        background: url("../../../static/img/desktop-artiste2.png");
+        margin-left: -100px;
+        margin-bottom: -80px;
+        align-self: end;
+    }
+    .artiste-texte {
+        width: 380px;
+        line-height: 2rem;
+    }
+}
+/* END OF MAIN ARTISTES */
+
+/* FOOTER */
+footer {
+    margin-top: 15rem;
+    text-align: center;
+}
+footer * {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+}
+/* END OF FOOTER */

@@ -1,0 +1,70 @@
+{
+  "accueil":{
+    "titre":"Et si...",
+    "txt1":"nous utilisions la technologie pour parler d'art et d'architecture ? Découvrez au travers d'ARCHITECH la vie et les oeuvres de Jean-Pierre Ugarte, un peintre féru de perspectives et de paysages surréaliste et brutaliste.",
+    "txt2":"Jean-Pierre Ugarte (né à Bordeaux le 7 janvier 1950) est un peintre français. Il réalise ses premières œuvres en 1961 et présente sa première exposition en 1984. Il poursuit ensuite son activité de peintre, avec des expositions, jusque dans les années 2000 et vend ses toiles en France et à l'étranger.",
+    "img1":"img1",
+    "img2":"img2"
+  },
+  "ugarte":{
+    "titre":"Jean-Pierre Ugarte",
+    "txt1":" est né le 7 janvier 1950 à Bordeaux. Il est le fils unique d'un employé de la SNCF et d'une mère ouvrière dans une usine. D'abord élevé jusqu'à 8 ans à Urrugne, il retourne ensuite vivre ensuite à Bordeaux jusqu'à l'âge de 24 ans. Il peint sans ambition particulière une quarantaine de tableaux « figuratifs » entre 1961 et 1966. Il étudie aux Beaux-Arts de Paris de 1966 à 1971.",
+    "txt2":"Commence alors une période de réflexion sur son art pendant laquelle, son service militaire accompli, il voyage en visitant les musées d'Europe du Nord, tout en vivant du produit des ventes de ses toiles.",
+    "txt3":"Puis il entame une carrière professionnelle, avec un bref passage dans l'enseignement (1973-1974) immédiatement suivi d'un poste de graphiste à la Société nationale des pétroles d'Aquitaine, où il travaille douze ans. Peu à peu, sa carrière de peintre se développe, avec un premier vernissage à Montauban en 1984, suivi par d'autres à Paris, Toulouse, Nice, Bordeaux, puis Pau où il peint de longues années dans son atelier du Boulevard Barbanègre. Depuis 2002, il expose à la Galerie Modus, située Place des Vosges.",
+    "txt4":"Enfin, de 2003 à 2008, il collabore à la série de bande dessinée Le Territoire, publiée aux éditions Delcourt, à la suite de sa rencontre en 2003 avec Éric Corbeyran.",
+    "txt5":"Depuis le début des années 1980, Jean-Pierre Ugarte a peint environ 450 toiles, qu'il vend en France et à l'étranger. Il peint dans des tonalités de bleu-gris éteint, de beige ou de bronze, dans le style d'Altdorfer ou de Caspar David Friedrich ; cependant, le monde qu'il décrit ainsi est un monde pétrifié.",
+    "img1":"img1",
+    "img2":"img2"
+  },
+  "artistes":{
+    "titre":"Un artiste unique ?",
+    "txt1":"Jean-Pierre Ugarte travaille dans une gamme de bleus gris ternes, beiges et bronzes qui évoquent des photographies anciennes et ternes.",
+    "txt2":"Artiste aux inspirations aussi bien brutaliste que surréaliste, il peint des paysages uniques difficilement comparable à d'autres artistes. Néanmoins son style de peinture « romantiques » est souvent comparer aux manières d'Altdorfer ou de Caspar David Friedrich.",
+    "txt3":"Caspar David Friedrich, né le 5 septembre 1774 à Greifswald et mort le 7 mai 1840 à Dresde, est un peintre et dessinateur prussien, considéré comme l'artiste le plus important et influent de la peinture romantique allemande du XIXe siècle. Il est particulièrement connu pour ses tableaux Le Voyageur contemplant une mer de nuages (1818) et La Mer de glace (1823-1824).",
+    "txt4":"Albrecht Altdorfer, né vers 1480 à Altdorf (Basse-Bavière) ou à Ratisbonne et mort le 12 février 1538 à Ratisbonne, est un peintre, graveur et architecte allemand de l'époque de la Renaissance, contemporain d'Albrecht Dürer. Il est considéré comme le représentant le plus important de l'école du Danube et fait partie des petits maîtres allemands. Il est notamment l'auteur de La Bataille d'Alexandre.",
+    "img1":"img1",
+    "img2":"img2"
+  },
+  "oeuvres":[
+    {
+      "id":"0",
+      "titre":"Le lieu sûr",
+      "annee":"2000",
+      "collection":"Collection Particulière",
+      "support":"Acrylique sur toile",
+      "dimension":"89 X 130",
+      "image":"static/img/oeuvre1.png"
+    },
+    {
+      "id":"1",
+      "titre":"Passage",
+      "annee":"2003",
+      "collection":"Collection Particulière",
+      "support":"Acrylique sur toile",
+      "dimension":"89 X 116",
+      "image":"static/img/oeuvre2.png"
+    },
+    {
+      "id":"2",
+      "titre":"Temps",
+      "annee":"2003",
+      "collection":"Collection Particulière",
+      "support":"Acrylique sur toile",
+      "dimension":"89 X 116",
+      "image":"static/img/oeuvre3.png"
+    },
+    {
+      "id":"3",
+      "titre":"Paysage",
+      "annee":"2012",
+      "collection":"Collection de l'Artiste",
+      "support":"Acrylique sur toile",
+      "dimension":"114 X 145",
+      "image":"static/img/oeuvre4.png"
+    }
+  ],
+  "form": {
+    "titre": "Vous pouvez ici collaborer",
+    "txt1": "au contenu de ce site en y ajoutant vos oeuvres favorites de Jean-Pierre Ugarte ! Pour cela, remplissez le formulaire ci-dessous avec les informations demandées (titre de l'oeuvre, année de réalisation, type de collection, type de peinture, et dimensions)."
+  }
+}
