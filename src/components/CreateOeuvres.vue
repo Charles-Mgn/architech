@@ -62,6 +62,10 @@ export default {
       })
   },
 
+  mounted () {
+    window.scrollTo(0, 0)
+  },
+
   methods : {
     previewImage: function(event) {
       this.file = this.$refs.file.files[0];
