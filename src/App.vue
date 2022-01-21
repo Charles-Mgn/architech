@@ -21,7 +21,7 @@
     <footer>
       <p>Charles Mangin, étudiant MMI Montbéliard</p>
       <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.</p>
-      <p>Tous droits de reproduction et de diffusion réservés © 2022</p>
+      <p>Tous droits de reproduction et de diffusion réservés © {{ anneeFooter }}</p>
     </footer>
   </div>
 </template>
@@ -31,8 +31,13 @@ export default {
   name: 'App',
   data() {
     return {
+      anneeFooter: 0
     }
   },
+  created() {
+    const d = new Date();
+    this.anneeFooter = d.getFullYear()
+  }
 }
 </script>
 
