@@ -1,11 +1,14 @@
 <template>
 <div id="accueil">
   <main class="layout">
-    <div class="accueil-flex-row">
+    <div class="accueil-flex-row line1">
       <img src="static/img/logo_large.png" alt="logo architech" class="accueil-logo-desktop">
       <div class="border-mobile-right">
         <div class="image-border accueil-img1"></div>
       </div>
+    </div>
+    <div class="line-container">
+      <div id="line2"></div>
     </div>
     <div class="accueil-flex-row">
       <div class="border-mobile-left">
@@ -16,7 +19,7 @@
         <p class="inline-paragraph">{{ content.accueil.txt1 }}</p>
       </div>
     </div>
-    <p class="accueil-bloc-text2">{{ content.accueil.txt2 }}</p>
+    <p class="accueil-bloc-text2 line3">{{ content.accueil.txt2 }}</p>
     <button ><router-link to="ugarte">> Découvrez Ugarte</router-link></button>
   </main>
 </div>
@@ -40,9 +43,9 @@ export default {
       console.log(response.data);
       this.content = response.data;
     }.bind(this))
-    .catch(function (error) {
-      console.log(error);
-    })
+      .catch(function (error) {
+        console.log(error);
+      })
   }
 }
 </script>

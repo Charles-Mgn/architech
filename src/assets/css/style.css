@@ -99,6 +99,7 @@ nav {
     display: block;
     margin: 0 auto;
     text-align: center;
+    padding: 0 3px;
 }
 nav ul {
     margin: 0;
@@ -161,7 +162,7 @@ main {
 .border-mobile-left {
     border-left: 5px solid var(--tonic-color);
     padding-left: 15px;
-    margin: 40px 0;
+    margin: 40px auto 40px -20px;
 }
 @media screen and (min-width: 700px) {
     main {
@@ -196,7 +197,7 @@ main {
 
     .accueil-bloc-text2 {
         display: block;
-        margin: 150px auto 0;
+        margin: 0 auto;
     }
 
     .accueil-img1, .accueil-img2 {
@@ -217,7 +218,7 @@ main {
     }
 
     .accueil-logo-desktop {
-        margin-left: 180px;
+        margin-left: 11vw;
     }
 
     .accueil-flex-row {
@@ -280,6 +281,18 @@ main {
         align-self: end;
         margin: 0 -80px -80px 0;
     }
+    .ugarte-img1::after {
+      position: absolute;
+      right: 23%;
+      bottom: -125px;
+      content: url("../../../static/img/line4.png");
+    }
+    .ugarte-img2::before {
+      position: absolute;
+      right: 20%;
+      top: -167px;
+      content: url("../../../static/img/line5.png");
+    }
     .ugarte-texte {
         width: 380px;
         line-height: 2rem;
@@ -308,7 +321,10 @@ main {
     animation: slideHorizontal .4s ease-in-out forwards;
 }
 .oeuvre-desc {
-    padding: 0 3rem;
+    padding: 0 1rem;
+}
+.oeuvre img {
+  width: 185px;
 }
 .oeuvre-desc * {
     margin: 0;
@@ -322,6 +338,9 @@ main {
         display: flex;
         margin: 100px 20% 0;
     }
+    .oeuvre img {
+      width: 205px;
+    }
     #oeuvres h1 {
         margin: 0 20%;
     }
@@ -330,6 +349,18 @@ main {
     }
     .oeuvre-titre {
         text-transform: uppercase;
+    }
+    .oeuvre:nth-of-type(2n-1)::before {
+      position: absolute;
+      left: -400px;
+      top: 40%;
+      content: url("../../../static/img/line6.png");
+    }
+    .oeuvre:nth-of-type(2n)::after {
+      position: absolute;
+      right: -338px;
+      top: 40%;
+      content: url("../../../static/img/line6-reverse.png");
     }
 }
 .desc-button {
@@ -451,7 +482,6 @@ form input {
     animation: slideHorizontal .4s ease-in-out forwards;
 }
 .artiste-texte {
-    width: 380px;
     line-height: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -479,6 +509,18 @@ form input {
         margin-bottom: -80px;
         align-self: end;
     }
+    .artiste-img1::after {
+      position: absolute;
+      right: 29%;
+      bottom: -125px;
+      content: url("../../../static/img/line10.png");
+    }
+    .artiste-img2::before {
+      position: absolute;
+      right: 34%;
+      top: -167px;
+      content: url("../../../static/img/line9.png");
+    }
     .artiste-texte {
         width: 380px;
         line-height: 2rem;
@@ -497,3 +539,85 @@ footer * {
     line-height: 2.1rem;
 }
 /* END OF FOOTER */
+
+/* LINES */
+.line-container {
+  position: relative;
+}
+@media screen and (min-width: 2150px) {
+  #line2 {
+    position: absolute;
+    top: -7vw;
+    margin-left: 23vw;
+    width: 47vw;
+    height: 500px;
+    background: url("../../../static/img/line2.png") no-repeat;
+    background-size: contain;
+  }
+
+  .line1::before {
+    position: absolute;
+    left: 0;
+    top: 11.5%;
+    content: url("../../../static/img/line1.png");
+  }
+}
+@media screen and (min-width: 1960px) and (max-width: 2150px) {
+  #line2 {
+    position: absolute;
+    top: -7vw;
+    margin-left: 23vw;
+    width: 47vw;
+    height: 500px;
+    background: url("../../../static/img/line2.png") no-repeat;
+    background-size: contain;
+  }
+
+  .line1::before {
+    position: absolute;
+    left: 0;
+    top: 11.5%;
+    content: url("../../../static/img/line1.png");
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1960px) {
+  #line2 {
+    position: absolute;
+    top: -6vw;
+    margin-left: 23vw;
+    width: 44vw;
+    height: 500px;
+    background: url("../../../static/img/line2.png") no-repeat;
+    background-size: contain;
+  }
+
+  .line1::before {
+    position: absolute;
+    left: -70px;
+    top: 11.5%;
+    content: url("../../../static/img/line1.png");
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .line1::before {
+    position: absolute;
+    left: -120px;
+    top: 11.5%;
+    content: url("../../../static/img/line1.png");
+  }
+}
+@media screen and (min-width: 1050px) {
+  .line3::before {
+    margin-left: 250px;
+    content: url("../../../static/img/line3.png");
+  }
+}
+/* END OF LINES */
+
+.accueil-flex-row {
+  margin: 0 7vw;
+}
+
+.accueil-flex-row:nth-of-type(1) {
+  margin-bottom: 10rem;
+}
