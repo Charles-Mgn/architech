@@ -6,11 +6,11 @@
       </div>
       <nav class="menu">
         <ul>
-          <li class="menu-lien-principal"><router-link to="/">Accueil</router-link></li>
-          <li class="menu-lien-principal"><router-link to="/ugarte">Ugarte</router-link></li>
-          <li class="menu-lien-principal"><router-link to="/oeuvres">Oeuvres</router-link></li>
-          <li class="menu-lien-principal"><router-link to="/createOeuvres">Collaboration</router-link></li>
-          <li class="menu-lien-principal"><router-link to="/artistes">Artistes similaires</router-link></li>
+          <li class="menu-lien-principal"><router-link to="/" onclick="document.documentElement.classList.toggle('menu-open')">Accueil</router-link></li>
+          <li class="menu-lien-principal"><router-link to="/ugarte" onclick="document.documentElement.classList.toggle('menu-open')">Ugarte</router-link></li>
+          <li class="menu-lien-principal"><router-link to="/oeuvres" onclick="document.documentElement.classList.toggle('menu-open')">Oeuvres</router-link></li>
+          <li class="menu-lien-principal"><router-link to="/createOeuvres" onclick="document.documentElement.classList.toggle('menu-open')">Collaboration</router-link></li>
+          <li class="menu-lien-principal"><router-link to="/artistes" onclick="document.documentElement.classList.toggle('menu-open')">Artistes similaires</router-link></li>
         </ul>
         <img src="static/img/logo_large.png" alt="logo architech">
       </nav>
